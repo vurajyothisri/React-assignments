@@ -13,7 +13,7 @@ const Userinput=()=>{
         }
         e.preventDefault() 
         updatefind(input)  // placing in the find value
-          updateinput("") // clearing th field
+          updateinput("") // clearing the field
 
     }
    

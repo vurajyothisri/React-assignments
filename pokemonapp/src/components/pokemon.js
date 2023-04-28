@@ -19,7 +19,7 @@ function Pokemon({input}){
         const abilityName=abilities.map((x)=>x.ability.name)// accessing values 
         const abilitytype=types.map((y)=>y.type.name)// accesing values
        updatedetails({name,id,weight,height,sprites,abilities:abilityName,types:abilitytype})
-       console.log(response.data)
+      
       
     }
     catch (error) {
@@ -41,7 +41,7 @@ function Pokemon({input}){
     const abilityName1=abilities.map((x)=>x.ability.name)
         const abilitytype2=types.map((y)=>y.type.name)
     updatedefault({name,id,weight,height,sprites,abilities:abilityName1,types:abilitytype2})
-   console.log(response1.data)
+  
   //  setupload(true)
     }
     catch(error){
