@@ -1,6 +1,5 @@
 import React from "react";
-
-
+import './style.css'
 const DefaultMovies1=()=>{
     const defaultmovies=[
 
@@ -38,26 +37,26 @@ const DefaultMovies1=()=>{
     return(
 
         <>
-      
+      <div className="cardcontainer">
             {
                 defaultmovies.map((m)=>{
                     return(
-                <div key={m.imdbID}>
+                <div key={m.imdbID} className="card">
                         <div>
-                             <img src={m.Poster} alt="poster" />
+                             <img src={m.Poster} alt="poster"  className="cardimg"/>
                          </div>
-                     <div>
-                         <p> Tilte:{m.Title}</p>
-                         <p>Release:{m.Released}</p>
-                        <p>Genre:{m.Genre}</p>
-                        <p>Language:{m.Language}</p>
-                        <p>Plot:{m.Plot}</p>
+                     <div className="cardcontent">
+                         <h1> Tilte:{m.Title}</h1>
+                         <p><span>Release</span>:{m.Released}</p>
+                        <p><span>Genre</span>:{m.Genre}</p>
+                        <p><span>Language</span>:{m.Language}</p>
+                        <p><span>Plot</span>:{m.Plot}</p>
                     </div>
                 </div>
                     )
                 })
             }
-      
+      </div>
         </>
     );
 }

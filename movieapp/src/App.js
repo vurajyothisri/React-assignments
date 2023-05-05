@@ -1,9 +1,16 @@
-import Userinput from './components/userinput';
+
 import './App.css';
+import Navbar from './components/navbar';
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <Userinput />
+    <>
+    <Navbar />
+    <Outlet />
+        {/* <Userinput />   
+       <Searchid /> */}
+    </>
   );
 }
 

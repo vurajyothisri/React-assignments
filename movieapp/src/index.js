@@ -1,13 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+// import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-
-
+import ReactDOM from 'react-dom/client';
+import Searchid from './components/searchid';
+import Userinput from './components/searchname';
+import { BrowserRouter} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+const appRouter=createBrowserRouter([{
+  path:"/",
+         element:<App/>,
+         children:[
+          {
+            path:"/",
+            element:<Userinput />,
+            },
+            {
+            path:"/searchid",
+            element:<Searchid/>,
+            },
+         ]
+        }])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <RouterProvider router={appRouter} />
+    
+    <BrowserRouter>
+    
+    
+      </BrowserRouter>
   </React.StrictMode>
 );
 
