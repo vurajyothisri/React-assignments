@@ -43,7 +43,7 @@ const Moviewyear=(props)=>{
         else{
           updatedefault(true)
         }
-    },[forinput,foryear])
+    },[forinput,foryear,result])
     return(<>
         {
 
@@ -57,14 +57,14 @@ const Moviewyear=(props)=>{
          {
               found?
               (
-                 <div>
+                 <div className="Movies_conatiner">
           
                   {details.map((movie) => (
-                      <div key={details.imdbID}>
+                      <div key={details.imdbID} className="card1">
                            <div>
-                               <img src={movie.Poster} alt="image" />
+                               <img src={movie.Poster} alt="No image Available" className="card1img" />
                            </div>
-                           <div>
+                           <div className="card1_content">
                                <h1>Title:{movie.Title}</h1>
                                <p>Year:{movie.Year}</p>
                                <p>imdbID:{movie.imdbID}</p>

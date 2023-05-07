@@ -41,3 +41,30 @@ body{
     display:grid;
    place-items: center;
 }
+.Movies_conatiner{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.card1{
+    width:300px;
+    height: 300px;
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+   padding: 20px;
+   font-size: 10px;
+   /* border: 1px solid black; */
+}
+.card1img{
+    width:150px;
+    height:150px;
+  display: block;
+  margin:10px auto;
+}
+.card1_content h1{
+    text-align: center;
+}

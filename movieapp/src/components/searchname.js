@@ -9,7 +9,7 @@ const Userinput=()=>{
     const [cyear,upadatecyear]=useState("")// for sending year
     const [mentionyear,updatementionyear]=useState(true)//where to when year given or when year is not given
     const [searchwithvalue,updatesearchwithvalue]=useState(false)//when user dosen't mention name  it will show error
-    const [Placeholder,Updateplaceholder]=useState(true)//To remian placeholder
+    const [Placeholder,Updateplaceholder]=useState(false)//To remian placeholder
     //for movie name search
     const search=(e)=>{
           upadateinput(e.target.value)
@@ -59,7 +59,7 @@ const Userinput=()=>{
    <>
    <h1>Enter the Movie Name</h1>
       <form>
-          <input type="text" placeholder={Placeholder?"Enter id":"Id"} onChange={search} value={inputvalue}/>
+          <input type="text" placeholder={Placeholder?"Enter name":"Name"} onChange={search} value={inputvalue}/>
           <input type="text" placeholder="Enter year optional"  value={year} onChange={yearmentoined}/>
           <button  onClick={submited} >Search</button>
       </form>
