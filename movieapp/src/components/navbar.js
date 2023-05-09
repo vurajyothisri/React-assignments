@@ -1,17 +1,21 @@
 import React from "react"
-
 import { Link } from "react-router-dom";
-
+import './style.css'
 const Navbar=()=>{
+
     return(
-        <nav>
-           <ul>
-       <Link to="/">
-        <li>Search Name</li>
-       </Link>
-       <Link to="/searchid">
-        <li>Search id</li>
-       </Link>
+        <nav className="navbar">
+           <ul className="nav_container" >
+            
+         <li className="items">
+            
+         <Link to="/" className="colorchange">Search Name  </Link></li>
+      
+       
+        <li className="items">
+            
+        <Link to="/searchid" className="colorchange">Search id</Link></li>
+       
             </ul>
         </nav>
     )

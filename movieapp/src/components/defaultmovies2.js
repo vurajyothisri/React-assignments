@@ -26,24 +26,25 @@ const Defaultmovies=()=>{
     ]
     return(
         <>
-        
+        <div  className="searchcardcontainer">
         {
             defaultmovies.map((m)=>{
                 return(
-            <div key={m.imdbID}>
+            <div key={m.imdbID} className="searchnamecards">
                     <div>
-                         <img src={m.Poster} alt="poster" />
+                         <img src={m.Poster} alt="poster" className="searchcardimg"/>
                      </div>
-                 <div>
-                     <p> Tilte:{m.Title}</p>
-                     <p>Year:{m.Year}</p>
-                    <p>imdbID:{m.imdbID}</p>
-                    <p>Type:{m.Type}</p>
+                 <div className="searchcardcontent">
+                     <h4> Tilte:{m.Title}</h4>
+                     <p><span>Year</span>:{m.Year}</p>
+                    <p><span>imdbID</span>:{m.imdbID}</p>
+                    <p><span>Type</span>:{m.Type}</p>
                 </div>
             </div>
                 )
             })
         }
+        </div>
         </>
     )
 }

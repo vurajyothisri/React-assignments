@@ -13,13 +13,13 @@ const DefaultMovies1=()=>{
             Plot:"A spy with a mysterious past, who is on a mission to uncover the truth about a dangerous terrorist organization.",
         },
         {
-            imdbID:"tt3679040",
-            Poster:"https://m.media-amazon.com/images/M/MV5BMDU3YjlkYjUtYzBmNi00M2ZkLThjY2EtZDhiMjViMzE1NjFhXkEyXkFqcGdeQXVyOTI3MzI4MzA@._V1_SX300.jpg",
-            Title:"Kisi Ka Bhai Kisi Ki Jaan",
-            Released:"21 Apr 2023",
-            Genre:"Action, Comedy, Drama",
+            imdbID:"tt11905536",
+            Poster:"https://m.media-amazon.com/images/M/MV5BMTczZDQwOTEtZmIzZC00YWNkLTljYmEtMzEzNjBkMmZjYTEwXkEyXkFqcGdeQXVyOTI3MzI4MzA@._V1_SX300.jpg",
+            Title:"Gumraah",
+            Released:"07 Apr 2023",
+            Genre:"Action, Crime, Thriller",
             Language:"Hindi",
-            Plot:"The eldest brother refuses to marry since he believes it may create disharmony in his big family. His brothers, who've already found partners, come together to find a match for him.",
+            Plot:"The murder investigation of a young man , takes an unexpected turn when the cops discover that the prime suspect has a lookalike.",
            
         },
         {
@@ -37,15 +37,15 @@ const DefaultMovies1=()=>{
     return(
 
         <>
-      <div className="cardcontainer">
+      <div className="idcardcontainer">
             {
                 defaultmovies.map((m)=>{
                     return(
-                <div key={m.imdbID} className="card">
+                <div key={m.imdbID} className="id">
                         <div>
-                             <img src={m.Poster} alt="poster"  className="cardimg"/>
+                             <img src={m.Poster} alt="poster"  className="idcardimg"/>
                          </div>
-                     <div className="cardcontent">
+                     <div className="idcardcontent">
                          <h1> Tilte:{m.Title}</h1>
                          <p><span>Release</span>:{m.Released}</p>
                         <p><span>Genre</span>:{m.Genre}</p>
