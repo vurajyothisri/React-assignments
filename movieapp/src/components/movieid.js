@@ -9,7 +9,7 @@ const [defaultmovies,updatedefault]=useState(true)// before asking for results t
 
 useEffect(()=>{
     
-    const fetchDetails=async()=>{
+    const fetchdetails=async()=>{
         try{
             
             const response=await axios.get(`http://www.omdbapi.com/?apikey=5778591a&i=${id}`)
@@ -33,8 +33,8 @@ useEffect(()=>{
            alert("Something is went wrong with network")
         }
     }
-    if(id){
-        fetchDetails()
+    if(id!==""){
+        fetchdetails()
     }
     else{
         updatedefault(true)
@@ -59,7 +59,7 @@ return(
 
                         <div className="id1">
                             <div>
-                                <img src={details.Poster} alt="Title"  className="idcardimg"/>
+                                <img src={details.Poster} alt="No poster available"  className="idcardimg"/>
                             </div>
                             <div className=".idcardcontent">
                                 <h1>Title:{details.Title}</h1>

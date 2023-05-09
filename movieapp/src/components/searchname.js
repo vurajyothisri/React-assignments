@@ -15,7 +15,7 @@ const Userinput=()=>{
     
    
     const submited=(e)=>{
-      updatefind("")
+    
         e.preventDefault();
         //if user submit empty form
         if(Inputvalue.trim().length ===0){
