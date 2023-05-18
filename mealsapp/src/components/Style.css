@@ -1,0 +1,57 @@
+.container{
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+    padding:20px;
+    margin:20px;
+    justify-content: center;
+}
+.image{
+    width:200px;
+    height:200px;
+    /* margin:20px 10px; */
+}
+.ingredients{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.items{
+    list-style: none;
+    margin:0px 10px;
+}
+.content{
+    font-size: 10px;
+    padding:0px 20px;
+    margin-top: 30px;
+}
+.content  h1{
+    text-align: center;
+   
+}
+.instructions{
+    font-size: 10px;
+    text-align: center;
+    padding:0px 30px;
+}
+.video{
+text-align: center;
+}
+.erromessage{
+    color:red;
+    margin:50px ;
+    text-align: center;
+}
+.form{
+    margin-top:50px;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.button{
+    padding:5px 15px;
+    border-radius: 20px;
+    background-color: limegreen;
+    color:white;
+    border:none;
+}
