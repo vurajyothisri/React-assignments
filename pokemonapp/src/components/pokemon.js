@@ -77,8 +77,8 @@ function Pokemon({input}){
           <img src={details.sprites?.other.dream_world.front_default} alt="" className="wh" />
           </div>
            
-           <h2 className="mainheading">Name:     {details.name&&details.name.toUpperCase()}</h2>
-           <p className="details">id: <span>{details.id}</span></p>
+           <h2 className="mainheading">Name:{details.name&&details.name.toUpperCase()}</h2>
+            <p className="details">id: <span>{details.id}</span></p>
            <p className="details"> weight:<span>{details.weight}</span></p>
            <p className="details">height:<span>{details.height}</span></p>
            <p className="details">Ability: <span>{details.abilities&&details.abilities.join(",")}</span></p>
