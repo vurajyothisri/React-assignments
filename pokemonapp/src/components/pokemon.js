@@ -63,7 +63,7 @@ function Pokemon({input}){
  const clear=()=>{
   updatedetails({});// we just empty the object
   setavailable(true)// we set true so it will not display any information because we already empty the object in the above step
-
+  
  }
      
       return (

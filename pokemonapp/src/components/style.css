@@ -60,6 +60,12 @@ body{
     display: block;
     margin:10px  auto;
 }
+.userinput button:hover{
+    background-color: #8AAAE5;
+    color:#ffffff;
+    font-weight: 600;
+    border:1px solid #ffffff
+}
 @media  screen and (max-width:600px) {
     .pokemonheading{
     
@@ -67,7 +73,7 @@ body{
     }
     .userinput{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap:10px;
         justify-content: center;
         align-items: center;
@@ -81,11 +87,18 @@ body{
         padding:10px 15px;
        width:100px;
     }
+    .userinput button:hover{
+        background-color: #8AAAE5;
+        color:#ffffff;
+        font-weight: 600;
+        border:1px solid #ffffff;
+        scale:calc(1.1)
+    }
     .pokemon{
-        width:200px;
+        width:300px;
         padding:10px 30px;
         text-align: center;
-        font-size: 17px;
+        font-size: 15px;
      
     }
     .image{
@@ -94,11 +107,13 @@ body{
         height: 50px;
     }
      
-    
+    span{
+        margin-right: 40px;
+    }
     .details{
-       display: flex;
-       flex-direction: column;
-
+        display: grid;
+    grid-template-columns: repeat(2,100px);
+    column-gap:10px;
     }
     
     .mainheading{
