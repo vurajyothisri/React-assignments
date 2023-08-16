@@ -70,9 +70,13 @@ body{
 }
 .id{
     background-color: #1A3140;
-    width:250px;
-    min-width: 200px;
-    padding:20px;
+    width:300px;
+    min-width: 190px;
+    padding:15px;
+}
+.id:hover{
+    border:2px white double;
+    border-radius: 20px;
 }
 .id1{
     background-color: #1A3140;
@@ -80,7 +84,7 @@ body{
     min-height: 200px;
     display: flex;
     flex-direction: row;
- font-size: 10px;
+ font-size: 20px;
  gap:30px;
  margin:15px auto;
  padding:20px;
@@ -88,9 +92,7 @@ body{
  border-radius: 20px;
 }
 .idcardcontent{
-   
-
-    font-size: 10px;
+   font-size: 18px;
 }
 .idcardimg{
     width:150px;
@@ -98,7 +100,10 @@ body{
     display: block;
     margin:10px auto;
 }
-
+.id1:hover{
+    border:2px white double;
+ border-radius: 20px;
+}
 .form{
     display:flex;
     justify-content:center;
@@ -121,7 +126,7 @@ button:hover{
 }
 .navbar{
    background-color: #FFFFFF;
-   width:500px;
+   width:600px;
    margin:10px auto;
     border-radius:25px;
 }
@@ -142,4 +147,18 @@ button:hover{
 }
 .colorchange:hover{
     text-decoration: wavy;
+}
+@media screen and (max-width:600px) {
+.navbar{
+width:300px;
+}
+.nav_container{
+    flex-direction: column;
+    gap:15px;
+}
+    .id1{
+        width:480px;
+        font-size: 15px;
+        padding-top: 30px;
+    }
 }

@@ -22,16 +22,7 @@ const DefaultMovies1=()=>{
             Plot:"The murder investigation of a young man , takes an unexpected turn when the cops discover that the prime suspect has a lookalike.",
            
         },
-        {
-            imdbID:"tt5635026",
-            Poster:"https://m.media-amazon.com/images/M/MV5BZTIzNTQ0ZTYtZGIwOC00NzIxLWI0OWMtY2JlNTNiOTM1MWZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
-            Title:"Peter Pan & Wendy",
-            Released:"28 Apr 2023",
-            Genre:"Action, Adventure, Comedy",
-            Language:"English",
-            Plot:"Based on J. M. Barrie's novel Peter and Wendy and inspired by the 1953 animated classic, Peter Pan and Wendy is the timeless tale of a young girl who, defying her parents' wishes to attend boarding school, travels with her two you..."
-           
-        }
+        
     ]
     // 
     return(
