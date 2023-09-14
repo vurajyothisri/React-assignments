@@ -14,14 +14,19 @@
 
     
     <p id="guess_meassage" class="meassage">Guess The Word</p>
+    <p id="no_of_letters"></p>
     <div id="Word" class="word_container">
-        <p id="no_of_letters"></p>
+        
     </div>
     <p>You Have <span id="Guess">7</span> guess</p>
-    <div id="Entered_letters" class="letters_entered"></div>
+    <p>You Entered Letters</p>
+    <div id="Entered_letters" class="letters_entered">
+       
+    </div>
     <p>Type one Letter</p>
-    <input type="text" pattern="[A-Za-z]{1}"  id="input_value"><br><br>
-    <button onclick="calling()">Guess</button>
+    <input type="text"  id="input_value"><br><br>
+    <p id="Error_message"></p>
+    <button onclick="find()" id="Submition">Guess</button>
     <script src="script.js"></script>
 </body>
 </html>
