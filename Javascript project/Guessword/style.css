@@ -25,3 +25,12 @@ body{
 .meassage{
     font-size: 30px;
 }
+.word_container{
+    height:80px;
+    width:150px;
+    margin: auto;
+}
+.letters_entered{
+    height:50px;
+    width:100px
+}

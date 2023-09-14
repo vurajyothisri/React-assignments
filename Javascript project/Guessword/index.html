@@ -10,17 +10,18 @@
     
     <div class="main_heading">
         <h1 class="heading">Guess <span>the</span> word</h1>
-    </div>
-   
-</div>
+    </div> 
+
     
     <p id="guess_meassage" class="meassage">Guess The Word</p>
-    <div id="Word" class="word_container"></div>
+    <div id="Word" class="word_container">
+        <p id="no_of_letters"></p>
+    </div>
     <p>You Have <span id="Guess">7</span> guess</p>
-    <div id="Entered_letters"></div>
+    <div id="Entered_letters" class="letters_entered"></div>
     <p>Type one Letter</p>
-    <input type="text" pattern="[A-Za-z]{1}" >
-    <button>Guess</button>
+    <input type="text" pattern="[A-Za-z]{1}"  id="input_value"><br><br>
+    <button onclick="calling()">Guess</button>
     <script src="script.js"></script>
 </body>
 </html>
