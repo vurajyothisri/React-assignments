@@ -6,7 +6,8 @@ let letter_messsage=document.querySelector("#no_of_letters")//print no of dashes
 let error_message=document.querySelector("#Error_message")// to print error meassage
 let button=document.querySelector("#Submition")
 let entered_list=[]
-var guess_count=3
+let guess_count=3
+let count=0
 word=["cloud","crab","psychology","science","foot","library","pricipal","priciple","school","cool","power","letters","company"]
 
 random_word=word[Math.floor(Math.random()*word.length)]
@@ -68,7 +69,9 @@ button.addEventListener('click',()=>{
                {
                   if(random_word[i]==input.value)
                   {
+
                     lines_list[i]=input.value+"  "
+                    count=count+1
                   }
                }      
           }
@@ -105,10 +108,22 @@ button.addEventListener('click',()=>{
   if(!entered_list.includes(input.value))
   {
          entered_list.push(input.value)
+        //  entered_letters.innerHTML=entered_list
+         
   }
   else
   {
     letter_messsage.innerHTML="You already entered that word"
+   
   }
+  entered_letters.innerHTML=entered_list
   input.value=""
+  //to disabled buttons after guess
+  if(count==lines_list.length)
+  {
+    letter_messsage.innerHTML="Yahooo you won the game"
+    button.disabled=true
+
+  }
+  
 })
