@@ -7,26 +7,24 @@
     <title>Guess The word</title>
 </head>
 <body>
-    
-    <div class="main_heading">
-         <h1 class="heading">Guess <span>the</span> word</h1>
-    </div> 
-
-    
+   
+        <div class="main_heading">
+            <h1 class="heading">Guess <span class="the">the</span> word</h1>
+        </div>
+        
+     
     <p id="guess_meassage" class="meassage">Guess The Word</p>
-       <p id="no_of_letters"></p>
+       <p id="no_of_letters" class="letters"></p>
     <div id="Word" class="word_container">
         
     </div>
-    <p>You Have <span id="Guess">3</span> guess</p>
-    <p>You Entered Letters</p>
-    <div id="Entered_letters" class="letters_entered">
-       
+    <p class="gues_count">You Have <span id="Guess">3</span> guess</p>
+    <div id="Entered_letters" class="letters_entered">   
     </div>
-    <p>Type one Letter</p>
+    <p class="input_label" >Type one Letter</p>
     <input type="text"  id="input_value"><br><br>
-    <p id="Error_message"></p>
-    <button onclick="find()" id="Submition">Guess</button>
+    <p id="Error_message" class="error_message"></p>
+    <button onclick="find()" id="Submition" class="button">Guess!</button>
     <script src="script.js"></script>
 </body>
 </html>

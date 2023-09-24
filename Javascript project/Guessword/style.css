@@ -2,35 +2,114 @@ body{
     background-color: #e1f7f4;
     box-sizing: border-box;
     text-align: center;
+    margin: auto;
+}
+.the{
+    font-family: cursive, sans-serif;
 }
 .main_heading{
-   /* display: flex;
-   justify-content: center; */
    background-color: #fffffb;
    width:400px;
    margin:auto;
-   clip-path: polygon(0 31%, 100% 12%, 99% 74%, 1% 64%);
-   height: 100px;
-   padding: 15px;
+   border-radius: 0px 100px 0px 100px;
+   border:3px solid #3c9a90;
+   height: 80px;
+   padding: auto;
    overflow: hidden;
+   margin-top: 20px;
    margin-bottom: 10px;
 }
-
-
 .heading{
     text-align: center;
-    padding-top: 10px;
     font-size: 30px;
+    font-weight: 900;
 }
 .meassage{
     font-size: 30px;
+    color: #416059;
 }
 .word_container{
-    height:80px;
-    width:150px;
+    height:60px;
+    width:180px;
     margin: auto;
+    color:#021a16;
+    font-weight: 500;
+    font-size: 20px;
 }
 .letters_entered{
-    height:50px;
-    width:100px
+    height:40px;
+    width:150px;
+    text-align: center;
+    margin: auto;
+    color: #021a16;
+    font-size: 20px;
+}
+.letters{
+    color:#021a16;
+    font-size: 25px;
+}
+.button{
+    background-color: #f78d58;
+    color:#fcf4e7;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+}
+input[type=text]{
+    padding:5px 2px;
+    width:50px;
+    border:3px solid #3c9a90;
+    outline: none; 
+}
+input[type=text]:focus{
+    border:3px solid #3c9a90;
+
+}
+.error_message{
+    color:red;
+    font-size: 20px;
+    font-weight: 600;
+}
+.input_label{
+    font-size: 20px;
+}
+.gues_count{
+    font-size: 20px;
+}
+@media screen   and (max-width:700px) {
+    body{
+        overflow: hidden;
+    }
+    .main_heading{
+        background-color: #fffffb;
+        width:250px;
+        margin:auto;
+        border-radius: 80px 0px 80px 0px;
+        border: 3px solid #3c9a90;
+        height: 80px;
+        padding: auto;
+        overflow: hidden;
+        margin-top: 100px;
+        margin-bottom: 10px;
+        font-size: 30px;
+     }
+     .heading{
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 900;
+        
+    }
+    
+    .meassage{
+        font-size: 25px;
+        margin:20px;
+    }
+    .letters{
+        font-size: 20px;
+    }
+    .error_message{
+        font-size: 18px;
+    }
 }
