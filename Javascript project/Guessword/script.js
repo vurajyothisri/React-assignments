@@ -11,16 +11,13 @@ let count=0
 word=["cloud","crab","psychology","science","foot","library","pricipal","priciple","school","cool","power","letters","company",'loding','name','people','check','queen','master','hello','dear','lion','tiger','fox']
 
 random_word=word[Math.floor(Math.random()*word.length)]
-console.log(random_word);
+
 var lines_list=[]
 for (let i=0;i<random_word.length;i++){
     lines_list[i]='_ '
 }
 //writing how may letters are ther in words
 letter_messsage.innerHTML=` You word has ${random_word.length} letters`;
-for (let i=0;i<random_word.length;i++){
-    console.log(lines_list[i])
-}
 word_lines.innerHTML=" _".repeat(random_word.length)
 
 //To find given input is alphabet or not
@@ -105,6 +102,8 @@ button.addEventListener('click',()=>{
    {
       letter_messsage.innerHTML="Yahooo you won the game"
       button.disabled=true
+      button.style.backgroundColor='green'
+      input.disabled=true
 
    }
 
@@ -116,25 +115,9 @@ button.addEventListener('click',()=>{
        letter_messsage.innerHTML="You lost the game.Sorry if you want to continue refresh the page"
        button.style.backgroundColor="Red"
        button.style.title="You lost button is enable"
-        input.disabled=true
+       input.disabled=true
 
   }
   input.value=""
 })
 
-console.log(entered_list)
-
-
-
-
-// button.addEventListener('click',()=>
-// {
-  
-       
-       
-// })  
-
-// button.addEventListener('click',()=>
-// {
-  
-// })
